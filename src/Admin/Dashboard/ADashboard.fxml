@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="1360.0" stylesheets="@../../stylesheet/stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Dashboard.ADashboardController">
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="235.0" layoutX="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/kiddylogo2.png" />
+         </image>
+      </ImageView>
+     <AnchorPane layoutX="88.0" layoutY="117.0" prefHeight="647.0" prefWidth="198.0" styleClass="sidebar">
+         <children>
+            <Pane layoutX="34.0" layoutY="160.0" prefHeight="38.0" prefWidth="166.0" styleClass="labbtn">
+               <children>
+                  <Label alignment="CENTER" layoutX="28.0" layoutY="9.0" text="Admin" textFill="#2262c6">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="btnHome" layoutX="10.0" layoutY="217.0" onAction="#switchHome" prefHeight="42.0" prefWidth="225.0" style="-fx-alignment: left;" styleClass="nav-button" stylesheets="@../../stylesheet/style.css" text="Dashboard" textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#a1aec4" glyphName="HOME" size="17.0" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+
+            <ImageView fitHeight="148.0" fitWidth="139.0" layoutX="42.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/user.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnTeachers" layoutX="10.0" layoutY="261.0" onAction="#switchTeachers" prefHeight="42.0" prefWidth="225.0" style="-fx-alignment: left;" styleClass="nav-button" stylesheets="@../../stylesheet/style.css" text="Teachers" textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#a1aec4" glyphName="APPS" size="17.0" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAddTeacher" layoutX="10.0" layoutY="305.0" onAction="#switchAddTeacher" prefHeight="42.0" prefWidth="225.0" style="-fx-alignment: left;" styleClass="nav-button" stylesheets="@../../stylesheet/style.css" text="Add New Teacher" textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#a1aec4" glyphName="ACCOUNT" size="17.0" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnStudents" layoutX="10.0" layoutY="349.0" onAction="#switchStudents" prefHeight="42.0" prefWidth="225.0" style="-fx-alignment: left;" styleClass="nav-button" stylesheets="@../../stylesheet/style.css" text="Students " textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#a1aec4" glyphName="APPS" size="17.0" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAddStudent" layoutX="10.0" layoutY="393.0" onAction="#switchAddStudent" prefHeight="42.0" prefWidth="225.0" style="-fx-alignment: left;" styleClass="nav-button" stylesheets="@../../stylesheet/style.css" text="Add New Student" textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#a1aec4" glyphName="ACCOUNT" size="17.0" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnEmail" layoutX="10.0" layoutY="437.0" onAction="#switchInbox" prefHeight="42.0" prefWidth="225.0" style="-fx-alignment: left;" styleClass="nav-button" stylesheets="@../../stylesheet/style.css" text="Email" textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#a1aec4" glyphName="EMAIL" size="17.0" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnExit" layoutX="10.0" layoutY="481.0" onAction="#Exit" prefHeight="42.0" prefWidth="225.0" style="-fx-alignment: left;" styleClass="nav-button" stylesheets="@../../stylesheet/style.css" text="Sign Out" textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#a1aec4" glyphName="LOGOUT" size="17.0" wrappingWidth="42.99997329711914" />
+               </graphic>
+            </JFXButton>
+            
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="holderPane" layoutX="324.0" layoutY="5.0" prefHeight="750.0" prefWidth="1035.0" />
+   </children>
+</AnchorPane>

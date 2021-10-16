@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<ScrollPane prefHeight="537.0" prefWidth="759.0" style="-fx-background-radius: 40em;" styleClass="modal-dialog" stylesheets="@../SchoolInfo/modal-dialog.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.superAdmin.standard.SectionViewController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="709.0">
+         <children>
+            <AnchorPane layoutY="121.0" />
+            <Pane layoutX="71.0" layoutY="86.0" prefHeight="367.0" prefWidth="586.0" style="-fx-border-width: 2; -fx-background-radius: 15; -fx-border-color: #e5e5e5;">
+               <children>
+                  <Pane layoutX="28.0" layoutY="-12.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #F7F7F7;">
+                     <children>
+                        <Label layoutY="2.0" prefHeight="21.0" prefWidth="118.0" text="Define Section" textFill="#cd0e0e" />
+                     </children>
+                  </Pane>
+                  <JFXTextField fx:id="sectionName" labelFloat="true" layoutX="181.0" layoutY="218.0" prefHeight="29.0" prefWidth="200.0" promptText="Section  Name" />
+                  <HBox layoutX="141.0" layoutY="312.0" prefHeight="35.0" prefWidth="337.0">
+                     <children>
+                        <JFXButton onAction="#save" prefHeight="37.0" prefWidth="70.0" style="-fx-background-color: #42ab1f;" text="Save" textFill="#e6ebe4">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="10.0" onAction="#update" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #1a65ab;" text="Update" textFill="#e6ebe4">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton layoutX="75.0" layoutY="10.0" onAction="#delete" prefHeight="37.0" prefWidth="70.0" style="-fx-background-color: #e40b0b;" text="Delete" textFill="#e6ebe4">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton layoutX="140.0" layoutY="10.0" onAction="#view" prefHeight="37.0" prefWidth="70.0" style="-fx-background-color: #5bc6e0;" text="View" textFill="#e6ebe4">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <JFXCheckBox fx:id="checkBox" checkedColor="#d7131d" layoutX="20.0" layoutY="31.0" text="Are perform operation ?" textFill="#bdbfa4" />
+                  <JFXTextField fx:id="sectionID" labelFloat="true" layoutX="180.0" layoutY="78.0" prefHeight="29.0" prefWidth="200.0" promptText="Section ID" />
+                  <JFXComboBox fx:id="ClassName" labelFloat="true" layoutX="177.0" layoutY="146.0" prefHeight="31.0" prefWidth="201.0" promptText="ClassName" />
+               </children>
+            </Pane>
+            <JFXButton onAction="#closeWindow" prefHeight="48.0" prefWidth="47.0" style="-fx-background-radius: 5em;" text="  " textFill="#da0a0a">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/icons8-delete-48%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

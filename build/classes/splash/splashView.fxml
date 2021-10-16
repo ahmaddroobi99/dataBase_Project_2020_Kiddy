@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Pane" prefHeight="566.0" prefWidth="717.0" style="-fx-background-color: #1b78c2; -fx-background-radius: 100px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="splash.SplashViewController">
+   <children>
+      <Label fx:id="systemLabel" alignment="CENTER" layoutX="247.0" layoutY="137.0" prefHeight="30.0" prefWidth="224.0" text="Kiddy SYSTEM" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="message1" alignment="CENTER" layoutX="247.0" layoutY="188.0" prefHeight="112.0" prefWidth="407.0" text="You never fail until you stop trying" textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Harlow Solid Italic" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="message2" alignment="CENTER" layoutX="253.0" layoutY="344.0" prefHeight="112.0" prefWidth="407.0" text="Life is journey, so take ride and enjoy it" textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Harlow Solid Italic" size="30.0" />
+         </font>
+      </Label>
+      
+      <Pane fx:id="spinnerPane" layoutX="253.0" layoutY="377.0" prefHeight="158.0" prefWidth="216.0" visible="false">
+         <children>
+            <JFXSpinner layoutX="75.0" layoutY="33.0" prefHeight="66.0" prefWidth="71.0" radius="30.0" />
+            <Label alignment="CENTER" layoutX="31.0" layoutY="99.0" prefHeight="38.0" prefWidth="178.0" text="LOADING PLEASE WAIT..." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Circle fx:id="logo" layoutX="366.0" layoutY="79.0" radius="66.0" strokeType="INSIDE" strokeWidth="5.0" visible="false" />
+      <Circle fx:id="cPhoto1" layoutX="163.0" layoutY="240.0" radius="66.0" strokeType="INSIDE" strokeWidth="5.0" visible="false" />
+      <Circle fx:id="cPhoto2" layoutX="163.0" layoutY="408.0" radius="63.0" stroke="#838282" strokeType="INSIDE" strokeWidth="5.0" style="-fx-background-color: #fff;" visible="false" />
+      
+   </children>
+</AnchorPane>

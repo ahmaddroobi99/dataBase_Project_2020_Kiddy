@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Kiddy_Project.jnlp">
+  <information>
+    <title>Kiddy_Project</title>
+    <vendor>k.kh.Pc</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Kiddy_Project.jar" size="1587128" download="eager" />
+    <jar href="lib\TrayTester.jar" size="52070" download="eager" />
+    <jar href="lib\activation.jar" size="56290" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\javax.mail.jar" size="653275" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\ojdbc8.jar" size="4398623" download="eager" />
+    <jar href="lib\spring-aop-5.2.5.RELEASE.jar" size="372325" download="eager" />
+    <jar href="lib\spring-beans-5.2.5.RELEASE.jar" size="685311" download="eager" />
+    <jar href="lib\spring-context-5.2.5.RELEASE.jar" size="1227620" download="eager" />
+    <jar href="lib\spring-core-5.2.5.RELEASE.jar" size="1440907" download="eager" />
+    <jar href="lib\spring-expression-5.2.5.RELEASE.jar" size="282183" download="eager" />
+    <jar href="lib\spring-jdbc-5.2.3.RELEASE.jar" size="406693" download="eager" />
+    <jar href="lib\spring-tx-5.2.3.RELEASE.jar" size="314314" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Kiddy_Project" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="Main.Main"  name="Kiddy_Project" />
+  <update check="always"/>
+</jnlp>
