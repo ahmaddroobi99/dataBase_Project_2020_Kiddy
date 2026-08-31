@@ -1,19 +1,10 @@
-# dataBase_Project_2020_Kiddy
+# Kiddy — Java/Oracle database course project
 
-Original Java coursework / practice repository (2021).
+NetBeans Java application over Oracle (`ojdbc8-full/`). Course database project nicknamed “Kiddy”. Includes `build.xml`, `src/`, `dist/`.
 
-This repository is **original work** on this account. It is kept for provenance.
+**Stack:** Java, Oracle JDBC, NetBeans
 
-It is **not** current research. Featured work:
+---
+Historical **BSc Computer Engineering** work (An-Najah National University, 2021). Kept for provenance — not current research.
 
-- [qg-lada-lab](https://github.com/ahmaddroobi99/qg-lada-lab) — QG Lagrangian data assimilation
-- [ai-perception-lab](https://github.com/ahmaddroobi99/ai-perception-lab) — computer vision lab
-- Profile: [github.com/ahmaddroobi99](https://github.com/ahmaddroobi99)
-
-## Language
-
-Java
-
-## Year
-
-2021
+Current work: [github.com/ahmaddroobi99](https://github.com/ahmaddroobi99)
